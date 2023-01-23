@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+
 import users from '../data/users.js';
 
 const app = express();

@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  margin: 3rem 0;
+}
+
+.buttonContainer button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 2px 8px;
+  cursor: pointer;
+  margin: 0 0.5rem 1rem;
+}
+
+.buttonContainer button:hover {
+  background-color: #ccc;
+}
+
+.buttonContainer button[disabled] {
+  cursor: not-allowed;
+  background-color: #fff;
+}
+
+.buttonContainer {
+  position: relative;
+}
+
+.buttonContainer small {
+  position: absolute;
+  width: 120px;
+  bottom: 15px;
+  color: #ff0000;
+}
+
+.heroes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+.hero img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 8rem;
+  min-width: 6rem;
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}

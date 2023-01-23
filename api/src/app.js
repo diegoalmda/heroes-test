@@ -11,6 +11,7 @@ app.use(express.json());
 
 app.get("/api/users", (req, res, next) => {
   res.status(200).send(users.user);
+  res.end();
 });
 
 app.listen(PORT, () => console.log(`Running app in port: ${PORT}`));

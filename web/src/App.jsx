@@ -49,7 +49,7 @@ function App() {
           Fetch
         </button>
         {
-          cont >= users.length && <small>Não há mais itens</small>
+          cont >= users.length && users.length !== 0 && <small>Não há mais itens</small>
         }        
       </div>
       <div className={styles.heroes}>

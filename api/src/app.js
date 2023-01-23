@@ -10,8 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api/users", (req, res, next) => {
-  res.status(200).send(users.user);
-  res.end();
+  return res.status(200).json(users.user);
 });
 
 app.listen(PORT, () => console.log(`Running app in port: ${PORT}`));
